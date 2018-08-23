@@ -1,0 +1,1442 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>V0.2 销售下单</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/v0_2_销售下单/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/v0_2_销售下单/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1933" class="ax_default box_1">
+        <div id="u1933_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u1934" class="ax_default droplist">
+        <select id="u1934_input">
+          <option value="厚度">厚度</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u1935" class="ax_default droplist">
+        <select id="u1935_input">
+          <option value="规格">规格</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1936" class="ax_default box_1">
+        <div id="u1936_div" class=""></div>
+        <div id="u1936_text" class="text ">
+          <p><span>&nbsp;&nbsp; 当前改得价格，已经低于公司设置销售价区间范围</span></p><p><span>不允许销售</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1937" class="ax_default sticky_1">
+        <div id="u1937_div" class=""></div>
+        <div id="u1937_text" class="text ">
+          <p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">说明：</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">1、销售价：显示商品管理中对应供应商提货点的价格</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">&nbsp;&nbsp; &nbsp; 销售价可以修改，修改时判断改价区间的值，低于则提示</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">&nbsp;&nbsp; &nbsp; 如果原价-改价的差值，小于改价区间值的话</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">&nbsp;&nbsp; &nbsp; </span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;">注：统一转换成平米价进行差值判断</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">提示：</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">&nbsp;&nbsp;&nbsp; 当前改得价格，已经低于公司设置销售价区间范围，不允许销售</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">&nbsp;&nbsp; &nbsp; </span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">2、增加时，对应的商品调取出来的话（即没有销售价），默认到商品管理中增加一个商品，商品状态标为待完善。</span></p><p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">&nbsp;&nbsp; &nbsp; （人工通知到采购进行商品信息维护工作）--后续再做到联动的。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1938" class="ax_default box_2">
+        <div id="u1938_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1939" class="ax_default heading_3">
+        <div id="u1939_div" class=""></div>
+        <div id="u1939_text" class="text ">
+          <p><span>提示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u1940" class="ax_default icon">
+        <img id="u1940_img" class="img " src="images/v0_2_销售下单/u1940.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1941" class="ax_default primary_button">
+        <div id="u1941_div" class=""></div>
+        <div id="u1941_text" class="text ">
+          <p><span>知道了</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1942" class="ax_default box_1">
+        <div id="u1942_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1943" class="ax_default box_1">
+        <div id="u1943_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1944" class="ax_default heading_2">
+        <div id="u1944_div" class=""></div>
+        <div id="u1944_text" class="text ">
+          <p><span>山东巨润</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1945" class="ax_default heading_3">
+        <div id="u1945_div" class=""></div>
+        <div id="u1945_text" class="text ">
+          <p><span>等级：SP</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1946" class="ax_default heading_3">
+        <div id="u1946_div" class=""></div>
+        <div id="u1946_text" class="text ">
+          <p><span>规格：4.6mm*2440*3660</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1947" class="ax_default heading_3">
+        <div id="u1947_div" class=""></div>
+        <div id="u1947_text" class="text ">
+          <p><span>参考片数：35片</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1948" class="ax_default heading_3">
+        <div id="u1948_div" class=""></div>
+        <div id="u1948_text" class="text ">
+          <p><span>数量：</span><span style="color:#FF0000;">2包</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1949" class="ax_default heading_3">
+        <div id="u1949_div" class=""></div>
+        <div id="u1949_text" class="text ">
+          <p><span>￥11933.73</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1950" class="ax_default heading_3">
+        <div id="u1950_div" class=""></div>
+        <div id="u1950_text" class="text ">
+          <p><span>供应商：山东巨润玻璃有限公司 </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1951" class="ax_default heading_3">
+        <div id="u1951_div" class=""></div>
+        <div id="u1951_text" class="text ">
+          <p><span>1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u1952" class="compound ax_default icon" WidgetHeight="31" WidgetWidth="21" CompoundMode="true">
+        <img id="u1952_img" class="singleImg img " src="images/v0_2_销售下单/u1952.png"/>
+        <div id="u1952p000" class="ax_vector_shape" WidgetTopLeftX="-0.171090863840454" WidgetTopLeftY="8.33913463880581" WidgetTopRightX="-0.464667138162596" WidgetTopRightY="-0.365759873022129" WidgetBottomLeftX="0.471413254889703" WidgetBottomLeftY="-0.328355364990765" WidgetBottomRightX="0.177836980567561" WidgetBottomRightY="-9.0332498768187">
+          <img id="u1952p000_img" class="img " src="images/v0_2_销售下单/u1952p000.png"/>
+        </div>
+        <div id="u1952p001" class="ax_vector_shape" WidgetTopLeftX="285.5" WidgetTopLeftY="55" WidgetTopRightX="290.75" WidgetTopRightY="55" WidgetBottomLeftX="285.5" WidgetBottomLeftY="62.75" WidgetBottomRightX="290.75" WidgetBottomRightY="62.75">
+          <img id="u1952p001_img" class="img " src="images/v0_2_销售下单/u1952p001.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u1953" class="ax_default icon">
+        <img id="u1953_img" class="img " src="images/v0_2_销售下单/u1953.png"/>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u1954" class="compound ax_default icon" WidgetHeight="43" WidgetWidth="25" CompoundMode="true">
+        <img id="u1954_img" class="singleImg img " src="images/v0_2_销售下单/u1954.png"/>
+        <div id="u1954p000" class="ax_vector_shape" WidgetTopLeftX="-0.239207098727325" WidgetTopLeftY="5.33430538141744" WidgetTopRightX="-0.464914580835926" WidgetTopRightY="-0.184117073950853" WidgetBottomLeftX="0.490922641521403" WidgetBottomLeftY="0.287486081469112" WidgetBottomRightX="0.265215159412802" WidgetBottomRightY="-5.23093637389918">
+          <img id="u1954p000_img" class="img " src="images/v0_2_销售下单/u1954p000.png"/>
+        </div>
+        <div id="u1954p001" class="ax_vector_shape" WidgetTopLeftX="0.125" WidgetTopLeftY="7" WidgetTopRightX="-3" WidgetTopRightY="7" WidgetBottomLeftX="0.125" WidgetBottomLeftY="-0.166666666666667" WidgetBottomRightX="-3" WidgetBottomRightY="-0.166666666666667">
+          <img id="u1954p001_img" class="img " src="images/v0_2_销售下单/u1954p001.png"/>
+        </div>
+      </div>
+
+      <!-- keyboard arrow left (Shape) -->
+      <div id="u1955" class="ax_default shape" data-label="keyboard arrow left">
+        <img id="u1955_img" class="img " src="images/登录/keyboard_arrow_left_u154.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1956" class="ax_default heading_3">
+        <div id="u1956_div" class=""></div>
+        <div id="u1956_text" class="text ">
+          <p><span>填写订单</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1957" class="ax_default box_1">
+        <div id="u1957_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Vertical Line) -->
+      <div id="u1958" class="ax_default line">
+        <img id="u1958_img" class="img " src="images/登录/u86.png"/>
+      </div>
+
+      <!-- linear scale (Shape) -->
+      <div id="u1959" class="ax_default shape" data-label="linear scale">
+        <img id="u1959_img" class="img " src="images/登录/linear_scale_u87.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1960" class="ax_default box_1">
+        <div id="u1960_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1961" class="ax_default heading_2">
+        <div id="u1961_div" class=""></div>
+        <div id="u1961_text" class="text ">
+          <p><span>客户名称：上海蓝实特种玻璃制品有限公司 </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1962" class="ax_default heading_2">
+        <div id="u1962_div" class=""></div>
+        <div id="u1962_text" class="text ">
+          <p><span>客户联系:</span></p>
+        </div>
+      </div>
+
+      <!-- keyboard arrow right (Shape) -->
+      <div id="u1963" class="ax_default shape" data-label="keyboard arrow right">
+        <img id="u1963_img" class="img " src="images/销售下单/keyboard_arrow_right_u490.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1964" class="ax_default heading_2">
+        <div id="u1964_div" class=""></div>
+        <div id="u1964_text" class="text ">
+          <p><span>送货地址：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u1965" class="ax_default icon">
+        <img id="u1965_img" class="img " src="images/登录/u88.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1966" class="ax_default heading_3">
+        <div id="u1966_div" class=""></div>
+        <div id="u1966_text" class="text ">
+          <p><span>供应商：暂无</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1967" class="ax_default box_1">
+        <div id="u1967_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1968" class="ax_default heading_2">
+        <div id="u1968_div" class=""></div>
+        <div id="u1968_text" class="text ">
+          <p><span>XXXXXXX</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1969" class="ax_default heading_3">
+        <div id="u1969_div" class=""></div>
+        <div id="u1969_text" class="text ">
+          <p><span>￥0.00</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u1970" class="compound ax_default icon" WidgetHeight="43" WidgetWidth="25" CompoundMode="true">
+        <img id="u1970_img" class="singleImg img " src="images/v0_2_销售下单/u1954.png"/>
+        <div id="u1970p000" class="ax_vector_shape" WidgetTopLeftX="-0.256186860128458" WidgetTopLeftY="5.45167327211391" WidgetTopRightX="-0.481894342237059" WidgetTopRightY="-0.0667491832543803" WidgetBottomLeftX="0.47394288012027" WidgetBottomLeftY="0.404853972165585" WidgetBottomRightX="0.248235398011669" WidgetBottomRightY="-5.11356848320271">
+          <img id="u1970p000_img" class="img " src="images/v0_2_销售下单/u1970p000.png"/>
+        </div>
+        <div id="u1970p001" class="ax_vector_shape" WidgetTopLeftX="0.125" WidgetTopLeftY="7.16666666666667" WidgetTopRightX="-3" WidgetTopRightY="7.16666666666667" WidgetBottomLeftX="0.125" WidgetBottomLeftY="0" WidgetBottomRightX="-3" WidgetBottomRightY="0">
+          <img id="u1970p001_img" class="img " src="images/v0_2_销售下单/u1970p001.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1971" class="ax_default heading_3">
+        <div id="u1971_div" class=""></div>
+        <div id="u1971_text" class="text ">
+          <p><span>1</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u1972" class="ax_default line">
+        <img id="u1972_img" class="img " src="images/销售下单/u397.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1973" class="ax_default heading_3">
+        <div id="u1973_div" class=""></div>
+        <div id="u1973_text" class="text ">
+          <p><span>结算方式</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Radio Button) -->
+      <div id="u1974" class="ax_default radio_button">
+        <label for="u1974_input" style="position: absolute; left: 0px;">
+          <div id="u1974_text" class="text ">
+            <p><span>款到发货</span></p>
+          </div>
+        </label>
+        <input id="u1974_input" type="radio" value="radio" name="u1974"/>
+      </div>
+
+      <!-- Unnamed (Radio Button) -->
+      <div id="u1975" class="ax_default radio_button">
+        <label for="u1975_input" style="position: absolute; left: 0px;">
+          <div id="u1975_text" class="text ">
+            <p><span>货到&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 天付款</span></p>
+          </div>
+        </label>
+        <input id="u1975_input" type="radio" value="radio" name="u1975"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u1976" class="ax_default line">
+        <img id="u1976_img" class="img " src="images/销售下单/u391.png"/>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u1977" class="ax_default line">
+        <img id="u1977_img" class="img " src="images/销售下单/u397.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1978" class="ax_default heading_3">
+        <div id="u1978_div" class=""></div>
+        <div id="u1978_text" class="text ">
+          <p><span>60元（10*6包）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1979" class="ax_default heading_3">
+        <div id="u1979_div" class=""></div>
+        <div id="u1979_text" class="text ">
+          <p><span>吊装费用</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1980" class="ax_default heading_3">
+        <div id="u1980_div" class=""></div>
+        <div id="u1980_text" class="text ">
+          <p><span>第一家玻璃公司</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1981" class="ax_default heading_3">
+        <div id="u1981_div" class=""></div>
+        <div id="u1981_text" class="text ">
+          <p><span>第二家玻璃公司</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1982" class="ax_default heading_3">
+        <div id="u1982_div" class=""></div>
+        <div id="u1982_text" class="text ">
+          <p><span>0元（0*2包）【免费】</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u1983" class="ax_default line">
+        <img id="u1983_img" class="img " src="images/销售下单/u397.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1984" class="ax_default box_1">
+        <div id="u1984_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1985" class="ax_default heading_3">
+        <div id="u1985_div" class=""></div>
+        <div id="u1985_text" class="text ">
+          <p><span>参考总计￥37105.69 </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1986" class="ax_default box_1">
+        <div id="u1986_div" class=""></div>
+        <div id="u1986_text" class="text ">
+          <p><span>提交订单</span></p><p><span>（8包）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1987" class="ax_default heading_3">
+        <div id="u1987_div" class=""></div>
+        <div id="u1987_text" class="text ">
+          <p><span>订单留言</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Text Field) -->
+      <div id="u1988" class="ax_default text_field">
+        <input id="u1988_input" type="date" value="建议留言前先与相关人员沟通确认"/>
+      </div>
+
+      <!-- Unnamed (Radio Button) -->
+      <div id="u1989" class="ax_default radio_button">
+        <label for="u1989_input" style="position: absolute; left: 0px;">
+          <div id="u1989_text" class="text ">
+            <p><span>授信</span></p>
+          </div>
+        </label>
+        <input id="u1989_input" type="radio" value="radio" name="u1989"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1990" class="ax_default sticky_1">
+        <div id="u1990_div" class=""></div>
+        <div id="u1990_text" class="text ">
+          <p><span>说明：</span></p><p><span>运输方式：选择”用户自提“</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 不显示“运费含票”项</span></p><p><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 运费单价默认为0</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1991" class="ax_default heading_3">
+        <div id="u1991_div" class=""></div>
+        <div id="u1991_text" class="text ">
+          <p><span>总平方米：625.13</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1992" class="ax_default heading_3">
+        <div id="u1992_div" class=""></div>
+        <div id="u1992_text" class="text ">
+          <p><span>总吨位数： 7.19</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1993" class="ax_default heading_3">
+        <div id="u1993_div" class=""></div>
+        <div id="u1993_text" class="text ">
+          <p><span>总重箱数： 7</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u1994" class="ax_default droplist">
+        <select id="u1994_input">
+          <option value="上海市闵行区马桥镇北松公路3200号 ">上海市闵行区马桥镇北松公路3200号 </option>
+          <option selected value="松江区九亭镇松江高科技园区寅青路690号 ">松江区九亭镇松江高科技园区寅青路690号 </option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u1995" class="ax_default droplist">
+        <select id="u1995_input">
+          <option selected value="张三  13761476068">张三&nbsp; 13761476068</option>
+          <option value="王五  13961476068">王五&nbsp; 13961476068</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u1996" class="ax_default droplist">
+        <select id="u1996_input">
+          <option value="5天">5天</option>
+          <option selected value="15天">15天</option>
+          <option value="30天（8 ‰）">30天（8 ‰）</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1997" class="ax_default heading_3">
+        <div id="u1997_div" class=""></div>
+        <div id="u1997_text" class="text ">
+          <p style="font-size:12px;"><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;font-size:13px;">颜色：</span><span style="font-family:'Microsoft YaHei UI';font-weight:400;color:#000000;">镀蓝灰17</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1998" class="ax_default box_1">
+        <div id="u1998_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u1999" class="ax_default heading_3">
+        <div id="u1999_div" class=""></div>
+        <div id="u1999_text" class="text ">
+          <p><span>注：实际价格待确认之后会准确显示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2000" class="ax_default heading_3">
+        <div id="u2000_div" class=""></div>
+        <div id="u2000_text" class="text ">
+          <p><span>下单提示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2001" class="ax_default heading_3">
+        <div id="u2001_div" class=""></div>
+        <div id="u2001_text" class="text ">
+          <p><span>订单总价跟单人员会再确认一遍，到时订单总价会自动</span></p><p><span>更新，到时也请关注下我的下单列表中的订单！</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2002" class="ax_default heading_3">
+        <div id="u2002_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2003" class="ax_default box_1">
+        <div id="u2003_div" class=""></div>
+        <div id="u2003_text" class="text ">
+          <p><span>知道了</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Checkbox) -->
+      <div id="u2004" class="ax_default checkbox">
+        <label for="u2004_input" style="position: absolute; left: 0px;">
+          <div id="u2004_text" class="text ">
+            <p><span>下次不再提示</span></p>
+          </div>
+        </label>
+        <input id="u2004_input" type="checkbox" value="checkbox"/>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u2005" class="ax_default connector">
+        <img id="u2005_seg0" class="img " src="images/v0_2_销售下单/u2005_seg0.png" alt="u2005_seg0"/>
+        <img id="u2005_seg1" class="img " src="images/v0_2_销售下单/u2005_seg1.png" alt="u2005_seg1"/>
+        <img id="u2005_seg2" class="img " src="images/v0_2_销售下单/u2005_seg2.png" alt="u2005_seg2"/>
+        <img id="u2005_seg3" class="img " src="images/v0_2_销售下单/u2005_seg3.png" alt="u2005_seg3"/>
+        <div id="u2005_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2006" class="ax_default heading_3">
+        <div id="u2006_div" class=""></div>
+        <div id="u2006_text" class="text ">
+          <p><span>提货地点：常州仓库</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2007" class="ax_default heading_3">
+        <div id="u2007_div" class=""></div>
+        <div id="u2007_text" class="text ">
+          <p><span>销售单价：￥1750/㎡&nbsp;&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2008" class="ax_default heading_3">
+        <div id="u2008_div" class=""></div>
+        <div id="u2008_text" class="text ">
+          <p><span style="color:#FF0000;">￥1700/㎡</span><span style="color:#000000;">&nbsp;&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Horizontal Line) -->
+      <div id="u2009" class="ax_default line">
+        <img id="u2009_img" class="img " src="images/v0_2_销售下单/u2009.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2010" class="ax_default heading_3">
+        <div id="u2010_div" class=""></div>
+        <div id="u2010_text" class="text ">
+          <p><span>等级：SP</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2011" class="ax_default heading_3">
+        <div id="u2011_div" class=""></div>
+        <div id="u2011_text" class="text ">
+          <p><span>规格：4.6mm*2440*3660</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2012" class="ax_default heading_3">
+        <div id="u2012_div" class=""></div>
+        <div id="u2012_text" class="text ">
+          <p><span>参考片数：0片</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2013" class="ax_default heading_3">
+        <div id="u2013_div" class=""></div>
+        <div id="u2013_text" class="text ">
+          <p><span>数量：</span><span style="color:#FF0000;">2包</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2014" class="ax_default heading_3">
+        <div id="u2014_div" class=""></div>
+        <div id="u2014_text" class="text ">
+          <p><span>总平方米：0</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2015" class="ax_default heading_3">
+        <div id="u2015_div" class=""></div>
+        <div id="u2015_text" class="text ">
+          <p><span>总吨位数： 0</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2016" class="ax_default heading_3">
+        <div id="u2016_div" class=""></div>
+        <div id="u2016_text" class="text ">
+          <p><span>总重箱数：0</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2017" class="ax_default heading_3">
+        <div id="u2017_div" class=""></div>
+        <div id="u2017_text" class="text ">
+          <p style="font-size:12px;"><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;font-size:13px;">颜色：</span><span style="font-family:'Microsoft YaHei UI';font-weight:400;color:#000000;">镀蓝灰17</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2018" class="ax_default heading_3">
+        <div id="u2018_div" class=""></div>
+        <div id="u2018_text" class="text ">
+          <p><span>提货地点：/</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2019" class="ax_default heading_3">
+        <div id="u2019_div" class=""></div>
+        <div id="u2019_text" class="text ">
+          <p><span>销售单价：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2020" class="ax_default heading_3">
+        <div id="u2020_div" class=""></div>
+        <div id="u2020_text" class="text ">
+          <p><span style="color:#FF0000;">￥0/㎡</span><span style="color:#000000;">&nbsp;&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2021" class="ax_default heading_3">
+        <div id="u2021_div" class=""></div>
+        <div id="u2021_text" class="text ">
+          <p><span>会产生（3 ‰）手续费</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u2022" class="ax_default droplist">
+        <select id="u2022_input">
+          <option value="5天">5天</option>
+          <option selected value="15天">15天</option>
+          <option value="30天（8 ‰）">30天（8 ‰）</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2023" class="ax_default heading_3">
+        <div id="u2023_div" class=""></div>
+        <div id="u2023_text" class="text ">
+          <p><span>会产生（3 ‰）手续费</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u2024" class="ax_default droplist">
+        <select id="u2024_input">
+          <option value="5天">5天</option>
+          <option value="15天">15天</option>
+          <option selected value="30天">30天</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2025" class="ax_default heading_3">
+        <div id="u2025_div" class=""></div>
+        <div id="u2025_text" class="text ">
+          <p><span>会产生（8 ‰）手续费</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2026" class="ax_default label">
+        <div id="u2026_div" class=""></div>
+        <div id="u2026_text" class="text ">
+          <p><span>注：此为无信息商品，可先下单，订单人员会尽快确认处理</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2027" class="ax_default sticky_1">
+        <div id="u2027_div" class=""></div>
+        <div id="u2027_text" class="text ">
+          <p><span>无</span></p><p><span>信息商品下单展示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2028" class="ax_default heading_3">
+        <div id="u2028_div" class=""></div>
+        <div id="u2028_text" class="text ">
+          <p><span>付款方式&nbsp;&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Radio Button) -->
+      <div id="u2029" class="ax_default radio_button">
+        <label for="u2029_input" style="position: absolute; left: 0px;">
+          <div id="u2029_text" class="text ">
+            <p><span>现金</span></p>
+          </div>
+        </label>
+        <input id="u2029_input" type="radio" value="radio" name="u2029"/>
+      </div>
+
+      <!-- Unnamed (Radio Button) -->
+      <div id="u2030" class="ax_default radio_button">
+        <label for="u2030_input" style="position: absolute; left: 0px;">
+          <div id="u2030_text" class="text ">
+            <p><span>承兑</span></p>
+          </div>
+        </label>
+        <input id="u2030_input" type="radio" value="radio" name="u2030" checked/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2031" class="ax_default heading_3">
+        <div id="u2031_div" class=""></div>
+        <div id="u2031_text" class="text ">
+          <p><span>提示：以上商品价格已更新成承兑价，请知晓。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2032" class="ax_default heading_3">
+        <div id="u2032_div" class=""></div>
+        <div id="u2032_text" class="text ">
+          <p><span>以上商品价格已更新成承兑价，请知晓。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2033" class="ax_default heading_3">
+        <div id="u2033_div" class=""></div>
+        <div id="u2033_text" class="text ">
+          <p><span>以上商品价格已更新成现金价，请知晓。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2034" class="ax_default heading_3">
+        <div id="u2034_div" class=""></div>
+        <div id="u2034_text" class="text ">
+          <p><span>销售下单</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2035" class="ax_default box_1">
+        <div id="u2035_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (Vertical Line) -->
+      <div id="u2036" class="ax_default line">
+        <img id="u2036_img" class="img " src="images/登录/u86.png"/>
+      </div>
+
+      <!-- linear scale (Shape) -->
+      <div id="u2037" class="ax_default shape" data-label="linear scale">
+        <img id="u2037_img" class="img " src="images/登录/linear_scale_u87.png"/>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u2038" class="ax_default icon">
+        <img id="u2038_img" class="img " src="images/登录/u88.png"/>
+      </div>
+
+      <!-- Unnamed (Table) -->
+      <div id="u2039" class="ax_default">
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2040" class="ax_default table_cell">
+          <img id="u2040_img" class="img " src="images/v0_2_销售下单/u2040.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2041" class="ax_default table_cell">
+          <img id="u2041_img" class="img " src="images/v0_2_销售下单/u2041.png"/>
+          <div id="u2041_text" class="text ">
+            <p><span>品类</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2042" class="ax_default table_cell">
+          <img id="u2042_img" class="img " src="images/v0_2_销售下单/u2042.png"/>
+          <div id="u2042_text" class="text ">
+            <p><span>品牌</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2043" class="ax_default table_cell">
+          <img id="u2043_img" class="img " src="images/v0_2_销售下单/u2043.png"/>
+          <div id="u2043_text" class="text ">
+            <p><span>等级</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2044" class="ax_default table_cell">
+          <img id="u2044_img" class="img " src="images/v0_2_销售下单/u2043.png"/>
+          <div id="u2044_text" class="text ">
+            <p><span>膜系</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2045" class="ax_default table_cell">
+          <img id="u2045_img" class="img " src="images/v0_2_销售下单/u2043.png"/>
+          <div id="u2045_text" class="text ">
+            <p><span>颜色</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2046" class="ax_default table_cell">
+          <img id="u2046_img" class="img " src="images/v0_2_销售下单/u2046.png"/>
+          <div id="u2046_text" class="text ">
+            <p><span>厚度规格</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2047" class="ax_default table_cell">
+          <img id="u2047_img" class="img " src="images/v0_2_销售下单/u2047.png"/>
+          <div id="u2047_text" class="text ">
+            <p><span>包数</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2048" class="ax_default table_cell">
+          <img id="u2048_img" class="img " src="images/v0_2_销售下单/u2048.png"/>
+          <div id="u2048_text" class="text ">
+            <p><span>销售价</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2049" class="ax_default table_cell">
+          <img id="u2049_img" class="img " src="images/v0_2_销售下单/u2049.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2050" class="ax_default table_cell">
+          <img id="u2050_img" class="img " src="images/v0_2_销售下单/u2050.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2051" class="ax_default table_cell">
+          <img id="u2051_img" class="img " src="images/v0_2_销售下单/u2051.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2052" class="ax_default table_cell">
+          <img id="u2052_img" class="img " src="images/v0_2_销售下单/u2052.png"/>
+          <div id="u2052_text" class="text ">
+            <p><span>合格品</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2053" class="ax_default table_cell">
+          <img id="u2053_img" class="img " src="images/v0_2_销售下单/u2052.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2054" class="ax_default table_cell">
+          <img id="u2054_img" class="img " src="images/v0_2_销售下单/u2052.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2055" class="ax_default table_cell">
+          <img id="u2055_img" class="img " src="images/v0_2_销售下单/u2055.png"/>
+          <div id="u2055_text" class="text ">
+            <p><span>7*1600*2230</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2056" class="ax_default table_cell">
+          <img id="u2056_img" class="img " src="images/v0_2_销售下单/u2056.png"/>
+          <div id="u2056_text" class="text ">
+            <p><span>6</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2057" class="ax_default table_cell">
+          <img id="u2057_img" class="img " src="images/v0_2_销售下单/u2057.png"/>
+          <div id="u2057_text" class="text ">
+            <p><span style="font-family:'Arial Normal', 'Arial';font-weight:400;">100元/</span><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;color:#1E1E1E;">㎡</span></p><p><span style="font-family:'Arial Negreta', 'Arial Normal', 'Arial';font-weight:700;color:#1E1E1E;">100元/吨</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2058" class="ax_default table_cell">
+          <img id="u2058_img" class="img " src="images/v0_2_销售下单/u2058.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2059" class="ax_default table_cell">
+          <img id="u2059_img" class="img " src="images/v0_2_销售下单/u2059.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2060" class="ax_default table_cell">
+          <img id="u2060_img" class="img " src="images/v0_2_销售下单/u2060.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2061" class="ax_default table_cell">
+          <img id="u2061_img" class="img " src="images/v0_2_销售下单/u2061.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2062" class="ax_default table_cell">
+          <img id="u2062_img" class="img " src="images/v0_2_销售下单/u2061.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2063" class="ax_default table_cell">
+          <img id="u2063_img" class="img " src="images/v0_2_销售下单/u2061.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2064" class="ax_default table_cell">
+          <img id="u2064_img" class="img " src="images/v0_2_销售下单/u2064.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2065" class="ax_default table_cell">
+          <img id="u2065_img" class="img " src="images/v0_2_销售下单/u2065.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2066" class="ax_default table_cell">
+          <img id="u2066_img" class="img " src="images/v0_2_销售下单/u2066.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2067" class="ax_default table_cell">
+          <img id="u2067_img" class="img " src="images/v0_2_销售下单/u2058.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2068" class="ax_default table_cell">
+          <img id="u2068_img" class="img " src="images/v0_2_销售下单/u2059.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2069" class="ax_default table_cell">
+          <img id="u2069_img" class="img " src="images/v0_2_销售下单/u2060.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2070" class="ax_default table_cell">
+          <img id="u2070_img" class="img " src="images/v0_2_销售下单/u2061.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2071" class="ax_default table_cell">
+          <img id="u2071_img" class="img " src="images/v0_2_销售下单/u2061.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2072" class="ax_default table_cell">
+          <img id="u2072_img" class="img " src="images/v0_2_销售下单/u2061.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2073" class="ax_default table_cell">
+          <img id="u2073_img" class="img " src="images/v0_2_销售下单/u2064.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2074" class="ax_default table_cell">
+          <img id="u2074_img" class="img " src="images/v0_2_销售下单/u2065.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2075" class="ax_default table_cell">
+          <img id="u2075_img" class="img " src="images/v0_2_销售下单/u2066.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2076" class="ax_default table_cell">
+          <img id="u2076_img" class="img " src="images/v0_2_销售下单/u2058.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2077" class="ax_default table_cell">
+          <img id="u2077_img" class="img " src="images/v0_2_销售下单/u2059.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2078" class="ax_default table_cell">
+          <img id="u2078_img" class="img " src="images/v0_2_销售下单/u2060.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2079" class="ax_default table_cell">
+          <img id="u2079_img" class="img " src="images/v0_2_销售下单/u2061.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2080" class="ax_default table_cell">
+          <img id="u2080_img" class="img " src="images/v0_2_销售下单/u2061.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2081" class="ax_default table_cell">
+          <img id="u2081_img" class="img " src="images/v0_2_销售下单/u2061.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2082" class="ax_default table_cell">
+          <img id="u2082_img" class="img " src="images/v0_2_销售下单/u2064.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2083" class="ax_default table_cell">
+          <img id="u2083_img" class="img " src="images/v0_2_销售下单/u2065.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2084" class="ax_default table_cell">
+          <img id="u2084_img" class="img " src="images/v0_2_销售下单/u2066.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2085" class="ax_default table_cell">
+          <img id="u2085_img" class="img " src="images/v0_2_销售下单/u2058.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2086" class="ax_default table_cell">
+          <img id="u2086_img" class="img " src="images/v0_2_销售下单/u2059.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2087" class="ax_default table_cell">
+          <img id="u2087_img" class="img " src="images/v0_2_销售下单/u2060.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2088" class="ax_default table_cell">
+          <img id="u2088_img" class="img " src="images/v0_2_销售下单/u2061.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2089" class="ax_default table_cell">
+          <img id="u2089_img" class="img " src="images/v0_2_销售下单/u2061.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2090" class="ax_default table_cell">
+          <img id="u2090_img" class="img " src="images/v0_2_销售下单/u2061.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2091" class="ax_default table_cell">
+          <img id="u2091_img" class="img " src="images/v0_2_销售下单/u2064.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2092" class="ax_default table_cell">
+          <img id="u2092_img" class="img " src="images/v0_2_销售下单/u2065.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2093" class="ax_default table_cell">
+          <img id="u2093_img" class="img " src="images/v0_2_销售下单/u2066.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2094" class="ax_default table_cell">
+          <img id="u2094_img" class="img " src="images/v0_2_销售下单/u2094.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2095" class="ax_default table_cell">
+          <img id="u2095_img" class="img " src="images/v0_2_销售下单/u2095.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2096" class="ax_default table_cell">
+          <img id="u2096_img" class="img " src="images/v0_2_销售下单/u2096.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2097" class="ax_default table_cell">
+          <img id="u2097_img" class="img " src="images/v0_2_销售下单/u2097.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2098" class="ax_default table_cell">
+          <img id="u2098_img" class="img " src="images/v0_2_销售下单/u2097.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2099" class="ax_default table_cell">
+          <img id="u2099_img" class="img " src="images/v0_2_销售下单/u2097.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2100" class="ax_default table_cell">
+          <img id="u2100_img" class="img " src="images/v0_2_销售下单/u2100.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2101" class="ax_default table_cell">
+          <img id="u2101_img" class="img " src="images/v0_2_销售下单/u2101.png"/>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u2102" class="ax_default table_cell">
+          <img id="u2102_img" class="img " src="images/v0_2_销售下单/u2102.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2103" class="ax_default box_1">
+        <div id="u2103_div" class=""></div>
+        <div id="u2103_text" class="text ">
+          <p><span>包数</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2104" class="ax_default primary_button">
+        <div id="u2104_div" class=""></div>
+        <div id="u2104_text" class="text ">
+          <p><span>增加</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2105" class="ax_default box_1">
+        <div id="u2105_div" class=""></div>
+        <div id="u2105_text" class="text ">
+          <p><span>下一步</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2106" class="ax_default paragraph">
+        <div id="u2106_div" class=""></div>
+        <div id="u2106_text" class="text ">
+          <p style="font-size:10px;"><span style="font-size:13px;color:#FF0000;">&nbsp;</span><span style="font-size:13px;">（</span><span style="font-size:12px;color:#999999;"> 0.74 元/</span><span style="color:#1E1E1E;">㎡</span><span style="font-size:13px;color:#000000;">）</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2107" class="ax_default paragraph">
+        <div id="u2107_div" class=""></div>
+        <div id="u2107_text" class="text ">
+          <p><span>销售价&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span></p>
+        </div>
+      </div>
+
+      <!-- keyboard arrow left (Shape) -->
+      <div id="u2108" class="ax_default shape" data-label="keyboard arrow left">
+        <img id="u2108_img" class="img " src="images/登录/keyboard_arrow_left_u154.png"/>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u2109" class="ax_default icon">
+        <img id="u2109_img" class="img " src="images/销售下单/u429.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2110" class="ax_default box_1">
+        <div id="u2110_div" class=""></div>
+        <div id="u2110_text" class="text ">
+          <p><span>1700.00</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u2111" class="ax_default droplist">
+        <select id="u2111_input">
+          <option value="平米价">平米价</option>
+          <option selected value="吨位价">吨位价</option>
+          <option value="重箱价">重箱价</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u2112" class="ax_default icon">
+        <img id="u2112_img" class="img " src="images/销售下单/u429.png"/>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u2113" class="ax_default droplist">
+        <select id="u2113_input">
+          <option value="品类">品类</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u2114" class="ax_default droplist">
+        <select id="u2114_input">
+          <option value="品牌">品牌</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u2115" class="ax_default droplist">
+        <select id="u2115_input">
+          <option value="等级">等级</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u2116" class="ax_default droplist">
+        <select id="u2116_input">
+          <option value="膜系">膜系</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u2117" class="ax_default droplist">
+        <select id="u2117_input">
+          <option selected value="提货点">提货点</option>
+          <option value="无">无</option>
+          <option value="仓库">仓库</option>
+          <option value="码头">码头</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u2118" class="ax_default droplist">
+        <select id="u2118_input">
+          <option value="颜色">颜色</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u2119" class="ax_default image">
+        <img id="u2119_img" class="img " src="images/v0_2_销售下单/u2119.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2120" class="ax_default heading_3">
+        <div id="u2120_div" class=""></div>
+        <div id="u2120_text" class="text ">
+          <p><span>运费含票</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Radio Button) -->
+      <div id="u2121" class="ax_default radio_button">
+        <label for="u2121_input" style="position: absolute; left: 0px;">
+          <div id="u2121_text" class="text ">
+            <p><span>需要</span></p>
+          </div>
+        </label>
+        <input id="u2121_input" type="radio" value="radio" name="u2121" checked/>
+      </div>
+
+      <!-- Unnamed (Radio Button) -->
+      <div id="u2122" class="ax_default radio_button">
+        <label for="u2122_input" style="position: absolute; left: 0px;">
+          <div id="u2122_text" class="text ">
+            <p><span>不需要</span></p>
+          </div>
+        </label>
+        <input id="u2122_input" type="radio" value="radio" name="u2122"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2123" class="ax_default heading_3">
+        <div id="u2123_div" class=""></div>
+        <div id="u2123_text" class="text ">
+          <p><span>运输方式</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u2124" class="ax_default droplist">
+        <select id="u2124_input">
+          <option value="代办运输">代办运输</option>
+          <option value="客户自提">客户自提</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2125" class="ax_default heading_3">
+        <div id="u2125_div" class=""></div>
+        <div id="u2125_text" class="text ">
+          <p><span>运费单价</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2126" class="ax_default label">
+        <div id="u2126_div" class=""></div>
+        <div id="u2126_text" class="text ">
+          <p><span>元/吨</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Text Field) -->
+      <div id="u2127" class="ax_default text_field">
+        <input id="u2127_input" type="date" value="10.42"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2128" class="ax_default heading_3">
+        <div id="u2128_div" class=""></div>
+        <div id="u2128_text" class="text ">
+          <p><span>玻璃含票</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Radio Button) -->
+      <div id="u2129" class="ax_default radio_button">
+        <label for="u2129_input" style="position: absolute; left: 0px;">
+          <div id="u2129_text" class="text ">
+            <p><span>需要</span></p>
+          </div>
+        </label>
+        <input id="u2129_input" type="radio" value="radio" name="u2129" checked/>
+      </div>
+
+      <!-- Unnamed (Radio Button) -->
+      <div id="u2130" class="ax_default radio_button">
+        <label for="u2130_input" style="position: absolute; left: 0px;">
+          <div id="u2130_text" class="text ">
+            <p><span>不需要</span></p>
+          </div>
+        </label>
+        <input id="u2130_input" type="radio" value="radio" name="u2130"/>
+      </div>
+
+      <!-- Unnamed (Connector) -->
+      <div id="u2131" class="ax_default connector">
+        <img id="u2131_seg0" class="img " src="images/v0_2_销售下单/u2131_seg0.png" alt="u2131_seg0"/>
+        <img id="u2131_seg1" class="img " src="images/v0_2_销售下单/u2131_seg1.png" alt="u2131_seg1"/>
+        <img id="u2131_seg2" class="img " src="images/v0_2_销售下单/u2131_seg2.png" alt="u2131_seg2"/>
+        <div id="u2131_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2132" class="ax_default sticky_1">
+        <div id="u2132_div" class=""></div>
+        <div id="u2132_text" class="text ">
+          <p><span>1、品类\品牌\等级\膜系\颜色\厚度\规格是可以选择或输入</span></p><p><span>如右图</span></p><p><span><br></span></p><p><span><br></span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2133" class="ax_default heading_3">
+        <div id="u2133_div" class=""></div>
+        <div id="u2133_text" class="text ">
+          <p><span>商品膜系：SP</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2134" class="ax_default heading_3">
+        <div id="u2134_div" class=""></div>
+        <div id="u2134_text" class="text ">
+          <p><span>商品膜系：XXX</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u2135" class="ax_default icon">
+        <img id="u2135_img" class="img " src="images/v0_2_销售下单/u2135.png"/>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u2136" class="ax_default icon">
+        <img id="u2136_img" class="img " src="images/v0_2_销售下单/u2136.png"/>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u2137" class="ax_default heading_3">
+        <div id="u2137_div" class=""></div>
+        <div id="u2137_text" class="text ">
+          <p><span>提醒：如果没有选择到对应的商品</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
